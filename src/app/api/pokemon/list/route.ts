@@ -1,6 +1,6 @@
 import { Pokemons } from '@/types/api';
 
-export async function GET(req: Response, res: Request) {
+export async function GET(req: Request, res: Response) {
     try {
         const { searchParams } = new URL(req.url);
         let _page = Number(searchParams.get("page"));

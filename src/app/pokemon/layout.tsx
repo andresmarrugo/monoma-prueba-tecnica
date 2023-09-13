@@ -4,9 +4,7 @@ import ProtectedRoute from '@/components/protectedRoute'
 export default function DasboardLayout({
     children
 }: {
-    children: React.ReactNode,
-    test: React.ReactNode
-
+    children: React.ReactNode
 }) {
     return (<ProtectedRoute>
         <Header />

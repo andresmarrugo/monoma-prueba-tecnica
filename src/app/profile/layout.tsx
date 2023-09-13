@@ -5,7 +5,6 @@ export default function DasboardLayout({
     children
 }: {
     children: React.ReactNode,
-    test: React.ReactNode
 
 }) {
     return (<ProtectedRoute>
