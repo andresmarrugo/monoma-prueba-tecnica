@@ -1,4 +1,29 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Monoma Prueba Técnica
+
+Esta es una aplicación de ejemplo para la prueba técnica de Monoma. La aplicación utiliza [Next.js](https://nextjs.org/) como framework de desarrollo y [Tailwind CSS](https://tailwindcss.com/) para estilizar los componentes ademas de otras tecnologias.
+
+## Getting the Repo
+
+Antes de comenzar, asegúrate de tener [Node.js](https://nodejs.org/) instalado en tu sistema. Luego, sigue estos pasos:
+
+1. Clona este repositorio o descarga el código fuente.
+
+```bash
+git clone https://github.com/andresmarrugo/monoma-prueba-tecnica
+cd monoma-prueba-tecnica
+```
+
+## Installl Dependencies
+
+Run the comand to install deopendencies:
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
 
 ## Getting Started
 
