@@ -14,7 +14,7 @@ export async function GET(req: Request, res: Response) {
             })
         );
 
-        return Response.json({ count: response.count, pokemonDetails });
+        return Response.json({ count: response.count, pokemonDetails }, { status: 200 });
     } catch (error) {
         return Response.json({ error: 'Error al obtener datos de la API' });
     }

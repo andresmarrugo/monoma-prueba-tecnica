@@ -43,7 +43,7 @@ function PokemonList() {
     };
 
     return (
-        <div className="container mx-auto mt-8 px-3 h-fit">
+        <div className="container mx-auto mt-8 px-3 h-full">
             <h1 className="text-3xl font-semibold mb-4">Lista de Pokémons</h1>
             {isLoading ? (
                 <Spiner />
