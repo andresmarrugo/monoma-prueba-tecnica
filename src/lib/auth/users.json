@@ -1,0 +1,18 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "username": "usuario1@example.com",
+            "password": "$2b$10$sPjfC4DUnkuw3BTpW2I6DOaX/K4.iEnC1CLR2RU3JM7y5tf.hAIia",
+            "email": "usuario1@example.com",
+            "name": "Andres Marrugo"
+        },
+        {
+            "id": 2,
+            "username": "usuario2@example.com",
+            "password": "$2b$10$8b3LUY6V77rwS1rgB0pdYeg.J7y/ys05QqcND4NLvKJDnbNPFeBh6",
+            "email": "usuario2@example.com",
+            "name": "Administrador"
+        }
+    ]
+}
