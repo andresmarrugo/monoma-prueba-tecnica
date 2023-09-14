@@ -72,6 +72,7 @@ const PokemonDetails = () => {
                         </p>
 
                         <button
+                            id="back-btn"
                             role='button'
                             onClick={() => router.back()}
                             className="mt-4 bg-green-500 hover:bg-green-600 focus:bg-green-400 text-white py-2 px-4 rounded"

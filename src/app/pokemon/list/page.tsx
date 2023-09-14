@@ -51,6 +51,7 @@ function PokemonList() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                     {pokemons?.map((pokemon: Pokemon) => (
                         <div
+                            id={pokemon.name}
                             key={pokemon.name}
                             onClick={() => router.push(`/pokemon/${pokemon.id}`)}
                             className="bg-transparent rounded-3xl overflow-hidden h-96 shadow hover:bg-lime-100 cursor-pointer dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"

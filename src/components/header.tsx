@@ -43,6 +43,7 @@ export default function Example() {
                 </div>
                 <div className="flex lg:hidden">
                     <button
+                        id="menu-btn"
                         type="button"
                         className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
                         onClick={() => setMobileMenuOpen(true)}

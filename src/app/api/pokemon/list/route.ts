@@ -3,9 +3,9 @@ import { NextResponse, NextRequest } from 'next/server'
 
 export async function GET(req: NextRequest) {
     const { searchParams } = new URL(req.url);
-    const page = searchParams.get("page");
+    const page = Number(searchParams.get("page"));
 
-    const response = await fetch(`https://pokeapi.co/api/v2/pokemon?limit=10`, { cache: 'force-cache' });
+    const response = await fetch(`https://pokeapi.co/api/v2/pokemon?offset=${page * 10}&limit=10`, { cache: 'force-cache' });
     const pokemons = await response.json();
     const pokemonDetails = await Promise.all(
         pokemons.results.map(async (pokemon: any) => {
