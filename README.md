@@ -2,6 +2,40 @@
 
 Esta es una aplicación de ejemplo para la prueba técnica de Monoma. La aplicación utiliza [Next.js](https://nextjs.org/) como framework de desarrollo y [Tailwind CSS](https://tailwindcss.com/) para estilizar los componentes ademas de otras tecnologias.
 
+## Requerimientos
+
+- **Login Page:**
+  - 2 inputs con validaciones:
+    - Campo de email:
+        - [x] Debe ser un email válido.
+        - [x] Debe ser requerido.
+    - Campo de password:
+        - [x] Debe permitir cambiar el tipo de input de "password" a "text" mediante un evento click.
+    - [x] Lógica de ingreso utilizando un archivo `.json` para validar el correo electrónico y la contraseña ingresados.
+    - [x] Implementar un loading durante la validación.
+    - [x] Mostrar alertas para informar sobre el resultado de la validación (puede utilizar SweetAlert 2 u otras opciones).
+
+- **Principal/Dashboard Page:**
+    - Navbar o header con:
+        - [x]  Logo o texto del proyecto.
+   - [x] Lista de hasta 10 cartas de Pokémon por página.
+   - [x] Paginación para navegar entre las páginas de Pokémon.
+   - [x] Cada carta debe abrir un modal o página con información detallada del Pokémon seleccionado.
+   - [x] Header del dashboard con un avatar.
+   - [x] Menú desplegable al hacer clic en el avatar con opción para cerrar sesión.
+    - [x] Opcional: Página de información del usuario logueado.
+    - [x] Generar un token y almacenarlo en el localStorage o sessionStorage para validar el acceso a la página del dashboard.
+    - [x] Redireccionar al usuario a la página de login si no existe el token al intentar acceder al dashboard.
+    - [x] Redireccionar al usuario al dashboard si existe el token al intentar acceder a la página de login.
+
+- **Requisitos Técnicos:**
+  - [x] Utilizar React (JavaScript o TypeScript) o Next.js (JavaScript o TypeScript).
+  - [x] Opcional: Realizar pruebas unitarias y e2e con Cypress.
+  - [x] Utilizar un framework de diseño como Bootstrap, Material UI o Tailwind CSS.
+  - [ ] Configurar un puerto personalizable en un archivo `.env` para ejecutar el proyecto.
+  - [x] Utilizar estilos en componentes (styled-components) o preprocesador de estilos (Sass, Less, Stylus, PostCSS).
+
+
 ## Getting the Repo
 
 Antes de comenzar, asegúrate de tener [Node.js](https://nodejs.org/) instalado en tu sistema. Luego, sigue estos pasos:

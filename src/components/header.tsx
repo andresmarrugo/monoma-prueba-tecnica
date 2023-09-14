@@ -1,5 +1,5 @@
 "use client"
-import Reactm, { useState, Fragment } from 'react'
+import React, { useState, Fragment } from 'react'
 import { usePopper } from 'react-popper'
 import Image from 'next/image'
 import Logo from '@/assets/logo.png'
@@ -8,15 +8,10 @@ import Link from 'next/link'
 type Props = {}
 import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react'
 import {
-    ArrowPathIcon,
-    Bars3Icon,
     UserCircleIcon,
     CursorArrowRaysIcon,
-    FingerPrintIcon,
-    SquaresPlusIcon,
     XMarkIcon,
 } from '@heroicons/react/24/outline'
-import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 
 const Menu = [
     { name: 'User Profile', description: 'Muestra la informacion del usuario', href: '/profile', icon: UserCircleIcon },
@@ -41,6 +36,7 @@ export default function Example() {
                         <Image className="h-8 w-auto" src={Logo} alt="" />
                     </a>
                 </div>
+
                 <div className="flex lg:hidden">
                     <button
                         id="menu-btn"
@@ -49,14 +45,18 @@ export default function Example() {
                         onClick={() => setMobileMenuOpen(true)}
                     >
                         <span className="sr-only">Open main menu</span>
-                        <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+                        <div className="relative w-10 h-10 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
+                            <svg className="absolute w-12 h-12 text-gray-400 -left-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd"></path></svg>
+                        </div>
                     </button>
                 </div>
 
                 <div className="hidden lg:flex lg:flex-1 lg:justify-end">
                     <Popover className="relative">
                         <Popover.Button ref={setReferenceElement} className="flex items-end gap-x-1 text-sm font-semibold leading-6 text-gray-900">
-                            <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+                            <div className="relative w-10 h-10 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
+                                <svg className="absolute w-12 h-12 text-gray-400 -left-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd"></path></svg>
+                            </div>
                         </Popover.Button>
 
                         <Transition

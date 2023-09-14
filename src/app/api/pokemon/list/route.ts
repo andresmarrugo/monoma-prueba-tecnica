@@ -1,4 +1,3 @@
-import { Pokemon, Pokemons } from '@/types/api';
 import { NextResponse, NextRequest } from 'next/server'
 
 export async function GET(req: NextRequest) {
