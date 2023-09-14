@@ -36,12 +36,33 @@ yarn dev
 # or
 pnpm dev
 ```
+### Inicia sesion con estas credenciales de prueba
+
+**email**: usuario1@example.com
+**password**: contraseña1
+
+**email**: usuario2@example.com
+**passwird**: contraseña2  
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+
+## Cypress e2e tests
+
+to run the e2e test use the commands:
+
+```bash
+npm run cypress:run
+# or
+yarn cypress:run
+# or
+pnpm cypress:run
+```
+
+
 
 ## Learn More
 
