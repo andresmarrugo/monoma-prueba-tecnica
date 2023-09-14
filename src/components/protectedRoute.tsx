@@ -1,5 +1,4 @@
 import { redirect } from 'next/navigation'
-import { getCookie } from 'cookies-next'
 import { cookies } from 'next/headers'
 type Props = {
     children: React.ReactNode
